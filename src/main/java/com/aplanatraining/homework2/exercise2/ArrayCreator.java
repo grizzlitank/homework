@@ -12,11 +12,19 @@ public class ArrayCreator {
 
     }
 
+    /**
+     * @author Ilya Arkhipov
+     * The method launch program
+     */
     public void run(){
         String[] array = this.scan();
         System.out.println(this.getMaxLengthString(array));
     }
 
+    /**
+     * @author Ilya Arkhipov
+     * The method scans the size of the array and fills it with the console
+     */
     public String[] scan(){
         Scanner scanner = new Scanner(System.in);
         printMessageOne();
@@ -29,6 +37,11 @@ public class ArrayCreator {
         return array;
     }
 
+    /**
+     * @author Ilya Arkhipov
+     * @param array of strings
+     * @return Max string of array
+     */
     public String getMaxLengthString(String[] array){
         int maxLength = 0;
         int index = -1;
@@ -41,14 +54,28 @@ public class ArrayCreator {
         return array[index];
     }
 
+    /**
+     * @author Ilya Arkhipov
+     * print message "Enter the length of array"
+     */
     public void printMessageOne(){
         System.out.println("Enter the length of array");
     }
 
+    /**
+     * @author Ilya Arkhipov
+     * print message "Enter the words"
+     */
     public void printMessageTwo(){
         System.out.println("Enter the words");
     }
 
+    /**
+     * @author Ilya Arkhipov
+     * @param length of array
+     * @return String[] array
+     * create array of definite length
+     */
     public String[] createArray(int length){
         return new String[length];
     }

@@ -22,6 +22,10 @@ public class SweetFactory {
 
     }
 
+    /**
+     * @author Ilya Arkhipov
+     * The method print sum weight of sweetList
+     */
     public void printWeight(){
         System.out.println("Weight of sweetList:");
         int weight = 0;
@@ -31,6 +35,11 @@ public class SweetFactory {
         System.out.println(weight);
     }
 
+
+    /**
+     * @author Ilya Arkhipov
+     * The method print sum price of sweetList
+     */
     public void printPrice(){
         System.out.println("Price of sweetList:");
         int price = 0;
@@ -40,6 +49,11 @@ public class SweetFactory {
         System.out.println(price);
     }
 
+
+    /**
+     * @author Ilya Arkhipov
+     * The method print sweetList
+     */
     public void printSweetList(){
         System.out.println(sweetList);
     }

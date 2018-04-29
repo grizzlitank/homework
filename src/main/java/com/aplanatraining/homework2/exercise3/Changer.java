@@ -13,11 +13,19 @@ public class Changer {
     }
 
 
-
+    /**
+     * @author Ilya Arkhipov
+     * print message "Enter the operation(1 - calculator, 2 - arrayCreator):"
+     */
     public static void printMessage(){
         System.out.println("Enter the operation(1 - calculator, 2 - arrayCreator):");
     }
 
+
+    /**
+     * @author Ilya Arkhipov
+     * The method launch program
+     */
     public void run(){
         Scanner scanner = new Scanner(System.in);
         printMessage();

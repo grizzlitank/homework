@@ -23,12 +23,22 @@ public class ArrayCreatorInt {
 
     }
 
+
+    /**
+     * @author Ilya Arkhipov
+     * random initialising of array in diapason [-10, 10]
+     */
     public void fillArray(){
         for(int i = 0; i < array.length; i++){
             array[i] = (int)(Math.random()*20) - 10;
         }
     }
 
+
+    /**
+     * @author Ilya Arkhipov
+     * @return index of max minus number
+     */
     public int getIndexMaxMinus(){
         int maxMinus = -10;
         int index = 0;
@@ -43,6 +53,10 @@ public class ArrayCreatorInt {
         return index;
     }
 
+    /**
+     * @author Ilya Arkhipov
+     * @return index of min plus number
+     */
     public int getIndexMinPlus(){
         int minPlus = 10;
         int index = 0;
@@ -57,11 +71,4 @@ public class ArrayCreatorInt {
         return index;
     }
 
-    public void change(){
-        int a = array[getIndexMaxMinus()];
-        int b = getIndexMinPlus();
-        array[getIndexMaxMinus()] = array[getIndexMinPlus()];
-        array[b] = a;
-
-    }
 }
